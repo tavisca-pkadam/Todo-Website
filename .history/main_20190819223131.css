@@ -1,0 +1,38 @@
+.header {
+    background-color:gray;
+    position: relative;
+    width: 100%;
+    height: 10vh;
+}
+
+#company_logo {
+    position: absolute;
+    left: 5%;
+    width: 4%;
+    margin-top: 1vh;
+}
+
+#todo_header {
+    font-size: 1.3em;
+    font-style: oblique;
+    font-kerning: 
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    /* right: 45%; */
+}
+
+#side_nav {
+    position: fixed;
+    width: 15%;
+    background-color: cornflowerblue;
+    height: 88vh;
+}
+
+#content {
+    position: relative;
+    left: 15%;
+    width:85%;
+    background-color: aquamarine;
+    height: 88vh;
+}

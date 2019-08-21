@@ -1,0 +1,15 @@
+.header {
+    background-color:gr;
+    position: relative;
+    height: "100px";
+    width: "100%";
+}
+
+#company_logo {
+    position: absolute;
+}
+
+#todo_header {
+    position: absolute;
+    right: "10px";
+}

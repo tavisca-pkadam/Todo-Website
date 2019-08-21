@@ -1,0 +1,87 @@
+.header {
+    background-color:gray;
+    position: relative;
+    width: 100%;
+    height: 10vh;
+}
+
+#company_logo {
+    position: absolute;
+    left: 5%;
+    width: 4%;
+    margin-top: 1vh;
+}
+
+#todo_header {
+    font-size: 1.3em;
+    font-style: oblique;
+    font-stretch: expanded;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    /* right: 45%; */
+}
+
+#side_nav {
+    position: fixed;
+    width: 15%;
+    background-color: cornflowerblue;
+    height: 88vh;
+}
+
+#todo_content {
+    position: relative;
+    left: 15%;
+    width:85%;
+    background-color: aquamarine;
+    height: 88vh;
+}
+
+#todo_content_head {
+    border: 1px;
+    position: relative;
+    background-color: deepskyblue;
+    padding: 5px;
+    width: 60%;
+    height: 6vh;
+    border-radius: 20px;
+    left: 20%;
+    top: 5%;
+}
+
+#todo_content_search{
+    position: absolute;
+    background-color: darksalmon;
+    padding: 5px;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+#todo_content_add {
+    position: absolute;
+    padding: 2px;
+    background-color: ivory;
+    left: 35vw;
+    top: 10px;
+    border-radius: 2px;
+    width: 15%;
+    text-align: center;
+    margin-left: 20px;
+}
+
+
+#todo_list {
+    background-color: mediumslateblue;
+    position: relative;
+    width: 80%;
+    left: 10%;
+    top: 10%;
+    height: 60vh;
+    border-radius: 15px;
+}
+
+.todo_item{
+    margin:px;
+    background-color: mediumpurple;
+    width: 80%;
+}

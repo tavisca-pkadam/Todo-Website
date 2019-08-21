@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+
+    <link rel="import" href="components/header.html" />
+
+    <!-- <script src='main.js'></script> -->
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="grid_header">
+        <div id="head" class="header">
+          <img id="company_logo" src="src/logo.jpg" width="5%" />
+          <p id="todo_header"><i>To-Do'ist</i></p>
+
+          <div class="links">
+            <div>
+                <div class="link_btn">Home</div>
+                <div class="link_btn">Home</div>
+                <div class="link_btn">Home</div>
+                <div class="link_btn">Home</div>              
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      <div class="grid_side_nav">
+        <div id="side_nav" class="side_nav">
+          <div id="side_todo" class="side_btn" onclick="sideNavButton('todo')")>
+              To-do's
+          </div>
+          <div id="side_user" class="side_btn" onclick="sideNavButton('account')">
+              Account
+          </div>
+          <div id="side_login" class="side_btn" onclick="sideNavButton('login')">
+              Login
+          </div>
+        </div>
+      </div>
+      <div class="grid_main_content">
+         <!-- Todo  -->
+        <div id="todo_content" class="todo_content">
+          <div id="todo_add_modal">
+            <div class="modal_header">Add TODO</div>
+            <div id="todo_add_modal_input"><input id="todo_add_modal_input_text" type="text"></div>
+            <div id="todo_add_modal_add_btn">Add</div>
+          </div>
+          <div id="todo_content_head">
+            <!-- <div id="todo_content_search"> -->
+            <input type="text" id="todo_content_head_search_input" />
+            <div id="todo_content_head_search_btn" class="search_button">
+              Search
+            </div>
+            <!-- </div> -->
+            <div id="todo_content_add" class="search_button">Add</div>
+          </div>
+          <div id="todo_list">
+            <!-- Todo List -->
+          </div>
+        </div>
+         <!-- Account  -->
+         <div id="account_content" class="account_content">
+            <div class="account_head">
+              Account
+            </div>
+            <div class="account_details_header">Personal Details</div>
+            <hr />
+            <div class="account_details">
+              <div>Username:- Paresh Kadam</div>
+              <div>Username:- Paresh Kadam</div>
+            </div>
+            <div class="account_details_header">Security Details</div>
+            <hr />
+            <div class="account_details">
+              <div>Username:- Paresh Kadam</div>
+              <div>Username:- Paresh Kadam</div>
+            </div>
+            <div class="account_details_header">Other Details</div>
+            <hr />
+            <div class="account_details">
+              <div>Username:- Paresh Kadam</div>
+              <div>Username:- Paresh Kadam</div>
+            </div>
+          </div>
+           <!-- Login  -->
+  
+          <div id="login_content" class="account_content">
+              <div class="account_head">
+                Login
+              </div>
+                <div class="login">
+                    <center>
+  
+                  <div id="login_user_input">
+                    Username:<input type="text" style="margin-left:5%;" />
+                  </div>
+                  <div id="login_password_input">
+                    Password<input type="password" style="margin-left:6.5%;" />
+                  </div>
+              </center>
+  
+                </div>
+            </div>
+      </div>
+        
+      <div class="grid_footer">
+      
+      </div>
+    </div>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
