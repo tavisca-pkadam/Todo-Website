@@ -10,7 +10,7 @@
 }
 body {
     margin: 0%;
-    color: #553c8b;
+    col
 }
 a {
   color: black;
@@ -53,7 +53,7 @@ a {
   font-size: 1.3rem;
   border-radius: 3px;
   border-style: groove;
-  border-color: none#f6f6f6 none none;
+  border-color: none#ffeafe none none;
 }
 
 .side_btn:hover {
@@ -300,7 +300,7 @@ a {
   border-color: #553c8b;
   border-width: 1px;
   border-style: solid;
-  background-color: #f6f6f6;
+  background-color: #ffeafe;
 }
 
 #login_user_input {
@@ -365,7 +365,7 @@ a {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1.5rem;
     padding: 1%;
-    background-color: #f6f6f6;
+    background-color: #ffeafe;
 }
 
 .account_details_header{

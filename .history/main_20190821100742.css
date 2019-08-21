@@ -10,7 +10,6 @@
 }
 body {
     margin: 0%;
-    color: #553c8b;
 }
 a {
   color: black;
@@ -53,12 +52,12 @@ a {
   font-size: 1.3rem;
   border-radius: 3px;
   border-style: groove;
-  border-color: none#f6f6f6 none none;
+  border-color: none#71c9ce none none;
 }
 
 .side_btn:hover {
   /* left:-5%; */
-  border-color: #553c8b;
+  border-color: #71c9ce;
   border-style: solid;
   transition: linear;
   cursor: pointer;
@@ -66,7 +65,7 @@ a {
 }
 
 .modal_header{
-    background-color: #ccc1ff;
+    background-color: #62727b;
     height: 15%;
     padding-top: 1%;
     line-height: 1.3rem;
@@ -88,7 +87,7 @@ a {
     width: 100%;
     margin-top:20%;
     text-align: center;
-    background-color: #ccc1ff;
+    background-color: e3fdfd;
     z-index: 10;
 }
 
@@ -99,12 +98,12 @@ a {
 }
 #todo_add_modal_add_btn{   
     margin: 2% 45%;
-    background-color: #ccc1ff;
+    background-color: darkolivegreen;
     cursor: pointer;
 
 }
 #todo_add_modal_add_btn:hover {
-  background-color: #9ea9f0;
+  background-color: #a6e3e9;
 
 }
 
@@ -121,11 +120,10 @@ a {
 
   border-width: 1px;
   border-style: solid;
-  border-color: #553c8b;
+  border-color: #71c9ce;
 }
 
 .search_button {
-  
   text-align: center;
   background-color: #cbf1f5;
   border-radius: 5px;
@@ -150,7 +148,7 @@ a {
 }
 
 #todo_content_head_search_btn:hover {
-  background-color: #9ea9f0;
+  background-color: #a6e3e9;
 
 }
 
@@ -171,7 +169,7 @@ a {
 }
 #todo_content_add {
   position: absolute;
-  background-color: #cbf1f5;
+  background-color: aqua;
   left: 70%;
   /* top: 10px; */
   width: 15%;
@@ -179,7 +177,7 @@ a {
 }
 
 #todo_content_add:hover{
-  background-color: #9ea9f0;
+  background-color: #a6e3e9;
 
 }
 
@@ -196,7 +194,7 @@ a {
 
   border-width: 1px;
   border-style: solid;
-  border-color: #553c8b;
+  border-color: #71c9ce;
 
   overflow-y:scroll;
   scroll-behavior: smooth;
@@ -214,30 +212,21 @@ a {
   text-align: center;
   padding: 3px 10px;
   width: 7%;
-  background-color: #cbf1f5;
+  background-color: aquamarine;
   margin-left: 75%;
   border-radius: 5px;
   cursor: pointer;
-}
-
-
-.todo_edit_btn:hover{
-  background-color: #9ea9f0;
 }
 
 .todo_remove_btn {
   text-align: center;
   padding: 3px 10px;
   width: 7%;
-  background-color: #cbf1f5;
+  background-color: aquamarine;
   margin-left: 88%;
   border-radius: 5px;
   cursor: pointer;
 
-}
-
-.todo_remove_btn:hover{
-  background-color: #9ea9f0;
 }
 
 .todo_detail {
@@ -250,7 +239,7 @@ a {
   border-bottom: 6px solid;
   border-left: 6px solid;
   border-width: 1px;
-  border-color: #553c8b;
+  border-color: #b0bec5;
 }
 
 .links {
@@ -273,7 +262,7 @@ a {
 }
 
 .link_btn:hover {
-  background-color: #9ea9f0;
+  background-color: #a6e3e9;
 
 }
 
@@ -297,10 +286,9 @@ a {
   margin: 25%;
   margin-top: 8%;
   border-radius: 5px;
-  border-color: #553c8b;
+  border-color: blue;
   border-width: 1px;
   border-style: solid;
-  background-color: #f6f6f6;
 }
 
 #login_user_input {
@@ -365,7 +353,6 @@ a {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1.5rem;
     padding: 1%;
-    background-color: #f6f6f6;
 }
 
 .account_details_header{
@@ -396,14 +383,10 @@ a {
 
 #save_button {
   width:5%;
-  background-color: #ccc1ff;
+  background-color: yellowgreen;
   border-radius: 5px;
   text-align: center;
   padding: 0.5% 2%;
   position: fixed;
   right:5%;
-}
-
-#save_button:hover {
-  background-color: #9ea9f0;
 }

@@ -10,7 +10,6 @@
 }
 body {
     margin: 0%;
-    color: #553c8b;
 }
 a {
   color: black;
@@ -53,7 +52,7 @@ a {
   font-size: 1.3rem;
   border-radius: 3px;
   border-style: groove;
-  border-color: none#f6f6f6 none none;
+  border-color: none#ffeafe none none;
 }
 
 .side_btn:hover {
@@ -300,7 +299,6 @@ a {
   border-color: #553c8b;
   border-width: 1px;
   border-style: solid;
-  background-color: #f6f6f6;
 }
 
 #login_user_input {
@@ -365,7 +363,6 @@ a {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1.5rem;
     padding: 1%;
-    background-color: #f6f6f6;
 }
 
 .account_details_header{
@@ -405,5 +402,5 @@ a {
 }
 
 #save_button:hover {
-  background-color: #9ea9f0;
+  9ea9f0
 }

@@ -108,4 +108,5 @@ function editTask(id){
   document.getElementById("todo_add_modal").style.visibility = "visible";
   document.getElementById("todo_add_modal_input_text").value = todoDictionary[id];
   key=id;
+
 }
