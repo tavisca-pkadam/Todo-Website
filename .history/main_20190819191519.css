@@ -1,0 +1,14 @@
+.header {
+    background-color: honeydew;
+    position: relative;
+    
+}
+
+#company_logo {
+    position: absolute;
+}
+
+#todo_header {
+    position: absolute;
+    right: "10px";
+}

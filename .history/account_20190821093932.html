@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+
+    <link rel="import" href="components/header.html" />
+
+    <!-- <script src='main.js'></script> -->
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="grid_header">
+        <div id="head" class="header">
+          <img id="company_logo" src="src/logo.jpg" width="5%" />
+          <p id="todo_header"><i>To-Do'ist</i></p>
+
+          <div class="links">
+                <div>
+                    <div class="link_btn">Home</div>
+                    <div class="link_btn">About</div>
+                    <div class="link_btn">Contact</div>
+                </div>
+                
+              </div>
+        </div>
+      </div>
+      <div class="grid_side_nav">
+            <div class="side_nav">
+              <div id="side_todo" class="side_btn">
+                <a href="/home_grid.html">
+                  To-do's
+                </a>
+              </div>
+              <div id="side_user" class="side_btn">
+                <a href="/account.html">
+                  Account
+                </a>
+              </div>
+              <div id="side_login" class="side_btn">
+                <a href="/login_grid.html">
+                  Login
+                </a>
+              </div>
+            </div>
+          </div>
+      <div class="grid_main_content">
+        <div class="account_content">
+          <div class="account_head">
+            Account
+          </div>
+          <div class="account_details_header">Personal Details</div>
+          <hr />
+          <div class="account_details">
+            <div>Username:- <input id="account_input_username" type="text"></div>
+            <div>First Name:- <input id="account_input_first_name" type="text"></div>
+            <div>Last Name:- <input id="account_input_last_name" type="text"></div>
+          </div>
+          <div class="account_details_header">Security Details</div>
+          <hr />
+          <div class="account_details">
+            <div>Confirm Password:- <input id="account_input_confirm_password" type="password"></div>
+            <div>New Password:- <input id="account_input_last_new_password" type="password"></div>
+          
+            <div class="detail_name">Confirm Password:</div>
+            <div class="detail_input"><input id="account_input_confirm_password" type="tel"></div>
+            <div class="detail_name">New Password:--</div>
+            <div class="detail_input"><input id="account_input_phone_number" type="tel"></div>
+
+          </div>
+          <div class="account_details_header">Other Details</div>
+          <hr />
+          <div class="account_details">
+            <div class="detail_name">Phone Number:-</div>
+            <div class="detail_input"><input id="account_input_phone_number" type="tel"></div>
+          </div>
+        </div>
+      </div>
+      <div class="grid_footer">
+      
+    </div>
+  
+  </body>
+</html>
