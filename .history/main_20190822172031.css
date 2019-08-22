@@ -1,0 +1,490 @@
+.header {
+  background-color:#93b5b3;
+  grid-column: 1/5;
+  position: relative;
+  width: 100vw;
+  height: 10vh;
+  margin: 0%;
+  /* border-bottom: 2px double black; */
+  font-family: fantasy;
+}
+
+input {
+  border-radius: 8px;
+  width: 20vw;
+  height: 3vh;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0%;
+    color: #414141;
+}
+a {
+  color: #414141;
+  text-decoration: none;
+}
+
+#company_logo {
+  position: absolute;
+  left: 1%;
+  width: 4%;
+  margin-top: 1vh;
+}
+
+#todo_header {
+  font-size: 2em;
+  position: absolute;
+  width: 100%;
+  left: 7%;
+  padding-bottom: 7%;
+  /* text-align: left; */
+  top: -10px;
+  /* right: 45%; */
+}
+
+.side_nav {
+  margin-top:2%;
+  /* position: fixed; */
+  width: 100%;
+  background-color: #dff0ea;
+  height: 88vh;
+}
+
+.side_btn {
+  padding-top: 8%;
+  text-align: center;
+  width: 98%;
+  height:8%;
+  position: relative;
+  background-color: #dff0ea;
+  /* margin-top: 50%; */
+  font-size: 1.3rem;
+  border-width: 0px 5px 1px 0px;
+  border-style: solid;
+  border-color: #63707e;
+}
+
+
+.side_btn:hover {
+  /* left:-5%; */
+  background-color: #c8dad3;
+  border-color: #63707e;
+  border-style: solid;
+  transition: linear;
+  cursor: pointer;
+
+}
+
+.modal_header{
+    background-color: #c8dad3;
+    height: 15%;
+    padding-top: 1%;
+    line-height: 1.3rem;
+    font-size: 1.2rem;
+}
+
+.todo_content {
+  position: relative;
+  /* left: 5%; */
+  /* width: 85%; */
+  /* background-color: aquamarine; */
+  height: 78vh;
+}
+
+#todo_add_modal{
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #553c8b;
+    visibility: hidden;
+    position: absolute;
+    height: 20vh;
+    left: 20vw;
+    width: 50%;
+    margin-top:8%;
+    text-align: center;
+    background-color: #f2f6f5;
+    z-index: 10;
+}
+
+#todo_add_modal_input {
+    margin: 2% 10%;
+    /* background-color: aquamarine; */
+    width: 80%;
+}
+#todo_add_modal_add_btn{
+    margin: 2% 45%;
+    background-color: #ccc1ff;
+    cursor: pointer;
+
+}
+#todo_add_modal_add_btn:hover {
+  background-color: #c8dad3;
+
+}
+
+#todo_content_head {
+  border: 1px;
+  position: relative;
+  /* background-color: deepskyblue; */
+  padding: 5px;
+  width: 60%;
+  height: 6vh;
+  border-radius: 20px;
+  left: 20%;
+  top: 5%;
+
+  border-width: 1px;
+  border-style: solid;
+  border-color: #553c8b;
+}
+
+.search_button {
+
+  text-align: center;
+  background-color: #dff0ea;
+  border-radius: 5px;
+  padding: 0.5%;
+  cursor: pointer;
+
+}
+
+#todo_content_head_search_input{
+    position: absolute;
+    left:5%;
+    margin-top: 10px;
+
+}
+
+#todo_content_head_search_btn{
+    position: absolute;
+    left:50%;
+    margin-top: 10px;
+    width: 15%;
+    background-color: #dff0ea;
+}
+
+#todo_content_head_search_btn:hover {
+  background-color: #c8dad3;
+
+}
+
+#todo_content_search {
+  position: absolute;
+  /* background-color: darksalmon; */
+  padding: 0.5%;
+  margin-left: 4%;
+  padding-left: 2%;
+  padding-right: 4%;
+  left: 6vw;
+  border-radius: 2px;
+  /* border-width: 1px; */
+  /* border-style: solid; */
+  margin: 3px;
+
+  border-color: #553c8b;
+}
+#todo_content_add {
+  position: absolute;
+  background-color: #dff0ea;
+  left: 70%;
+  /* top: 10px; */
+  width: 15%;
+  margin-top: 10px;
+}
+
+#todo_content_add:hover{
+  background-color: #c8dad3;
+
+}
+
+#todo_list {
+  /* background-color: mediumslateblue; */
+  position: relative;
+  width: 80%;
+  left: 10%;
+  top: 10%;
+  height: 55vh;
+  border-radius: 15px;
+  padding: 3px;
+  padding-left: 8px;
+
+  border-width: 1px;
+  border-style: solid;
+  border-color: #553c8b;
+
+  overflow-y:scroll;
+  scroll-behavior: smooth;
+
+
+}
+
+
+
+.todo_grid_set {
+  margin-top:5px;
+  grid-template-areas: "sequence_number sequence_checkbox sequence_detail edit_button  remove_button";
+  display: grid;
+  width: 60vw;
+}
+
+
+.grid_todo_sequence_number {
+  padding:4px 4px;
+  background-color: #ccc1ff;
+  height:  3vh;
+  width: 3vw;
+  text-align: center;
+  grid-area: sequence_number;
+  /* background-color: aquamarine; */
+}
+
+
+.grid_todo_sequence_checkbox {
+  padding:4px;
+  background-color: #63707e;
+  height:  3vh;
+  width: 3vw;
+  grid-area: sequence_checkbox;
+  /* background-color: aquamarine; */
+}
+
+
+.grid_todo_sequence_detail {
+  background-color: #553c8b;
+  height: 4vh;
+  width: 35vw;
+  grid-area: sequence_detail;
+  /* background-color: aquamarine; */
+}
+
+
+.grid_todo_sequence_edit_button {
+  background-color: #553c8b;
+  height:  4vh;
+  width: 10vw;
+  grid-area: edit_button;
+  /* background-color: aquamarine; */
+}
+
+
+.grid_todo_sequence_remove_button {
+  background-color: #553c8b;
+  height: 4vh;
+  width: 7vw;
+  grid-area: remove_button;
+  /* background-color: aquamarine; */
+}
+
+
+
+.todo_item {
+  margin: 5px;
+  margin-top: 15px;
+}
+
+.todo_edit_btn {
+  /* position: absolute; */
+  text-align: center;
+  padding: 3px 10px;
+  /* width: 7%; */
+  background-color: #dff0ea;
+  /* margin-left: 75%; */
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.todo_edit_btn:hover{
+  background-color: #c8dad3;
+}
+
+.todo_remove_btn {
+  text-align: center;
+  /* padding: 3px 10px; */
+  /* width: 7%; */
+  background-color: #dff0ea;
+  /* margin-left: 88%; */
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.todo_remove_btn:hover{
+  background-color: #c8dad3;
+}
+
+.todo_detail {
+  /* width: 70%; */
+  /* position: absolute; */
+  /* padding: 2px; */
+  /* padding-left: 1%; */
+  border-bottom: 6px solid;
+  border-left: 6px solid;
+  border-width: 1px;
+  border-color: #553c8b;
+}
+
+
+
+.links {
+  position: relative;
+  width: 30%;
+  float: right;
+  /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif */
+  font-size: 1.3rem;
+}
+
+.link_btn {
+  float: left;
+  padding: 5px 15px;
+  background-color: #dff0ea;
+  width: 20%;
+  border-radius: 10px;
+  margin-left:10px;
+  margin-top:10px;
+  text-align: center;
+}
+
+.link_btn:hover {
+  background-color: #c8dad3;
+
+}
+
+
+#link_btn_home {
+  margin-left: 0%;
+}
+
+#link_btn_a {
+  margin-left: 30%;
+}
+
+#link_btn_b {
+  margin-left: 60%;
+}
+
+/* Login */
+
+.login {
+  padding: 10px;
+  margin: 25%;
+  margin-top: 8%;
+  border-radius: 5px;
+  border-color: #553c8b;
+  border-width: 1px;
+  border-style: solid;
+  background-color: #dff0ea;
+}
+
+
+#login_user_input {
+  margin: 5%;
+  text-align: left;
+  padding-left:10%;
+}
+
+#login_password_input {
+  margin: 5%;
+  text-align: left;
+  padding-left:10%;
+
+}
+
+.grid-container {
+  grid-template-areas:
+    "header header header header header"
+    "side_nav main_content main_content main_content main_content"
+    "side_nav main_content main_content main_content main_content"
+    "side_nav main_content main_content main_content main_content"
+    "side_nav main_content main_content main_content main_content"
+    "side_nav footer footer footer footer";
+  display: grid;
+  /* background-color: #2196F3; */
+}
+
+.grid_header {
+  height: 9vh;
+  grid-area: header;
+  /* background-color: aquamarine; */
+}
+
+.grid_side_nav {
+  height: 89vh;
+  width: 20vw;
+  grid-area: side_nav;
+  /* background-color: red; */
+}
+
+.grid_main_content {
+  height: 79vh;
+  width: 80vw;
+  grid-area: main_content;
+  /* background-color: blueviolet; */
+}
+
+.grid_footer {
+  height: 4vh;
+  width: 80vw;
+  grid-area: footer;
+}
+
+
+/* AccountDetails */
+
+.account_content{
+    /* background-color: burlywood; */
+    margin-top: 7px;
+}
+
+.account_head{
+    /* background-color: coral; */
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5rem;
+    padding: 1%;
+    background-color: #dff0ea;
+    border-style: solid;
+    border-width: 0px 0px 2px 0px;
+    border-color:  #414141;
+  }
+
+.account_details_header{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2rem;
+    padding-left:2%;
+    margin-top:3%;
+}
+
+.account_details{
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.4rem;
+    /* background-color: greenyellow; */
+    padding-left: 10%;
+}
+
+.detail_name{
+  width: 50%;
+  position: relative;
+  float: left;
+}
+
+.detail_input{
+  width: 10%;
+  position: static;
+}
+
+#save_button {
+  width:5%;
+  top:20vh;
+  background-color: #dff0ea;
+  border-radius: 5px;
+  text-align: center;
+  padding: 0.5% 2%;
+  position: fixed;
+  right:5%;
+}
+
+#save_button:hover {
+  background-color: #c8dad3;
+}
+
